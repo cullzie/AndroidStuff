@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TimePicker
+        android:id="@+id/digitalClock"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cwock"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_below="@+id/digitalClock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/NumberRow123">
+
+        <ToggleButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/monday"
+            android:textOn="@string/monday"
+            android:textOff="@string/monday"
+            android:textSize="12sp"/>
+
+        <ToggleButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tuesday"
+            android:textOn="@string/tuesday"
+            android:textOff="@string/tuesday"
+            android:textSize="12sp"/>
+
+        <ToggleButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/wednesday"
+            android:textOn="@string/wednesday"
+            android:textOff="@string/wednesday"
+            android:textSize="12sp"/>
+        <ToggleButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/thursday"
+            android:textOn="@string/thursday"
+            android:textOff="@string/thursday"
+            android:textSize="12sp"/>
+        <ToggleButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/friday"
+            android:textOn="@string/friday"
+            android:textOff="@string/friday"
+            android:textSize="12sp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/NumberRow123"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/weekend">
+
+        <ToggleButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/saturday"
+            android:textOn="@string/saturday"
+            android:textOff="@string/saturday"
+            android:textSize="12sp"/>
+        <ToggleButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/sunday"
+            android:textOn="@string/sunday"
+            android:textOff="@string/sunday"
+            android:textSize="12sp"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/setTime"
+        android:layout_below="@+id/weekend"
+        android:layout_alignParentLeft="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/setit"
+        android:textSize="12sp"/>
+
+    <Button
+        android:id="@+id/cancelTime"
+        android:layout_below="@+id/weekend"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cancelit"
+        android:textSize="12sp"/>
+</RelativeLayout>
